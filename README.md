@@ -10,7 +10,9 @@ so it should be installed on macOS with:
 Emulambda provides profiling information (clock time and memory usage estimation):
 
 ```
+git clone https://github.com/fugue/emulambda/
 pip3 install -e emulambda --user
+cd <path>/lambda-test-skeleton
 emulambda noddy_lambda.lambda_handler - -v < noddy_lambda/event.json
 ```
 
