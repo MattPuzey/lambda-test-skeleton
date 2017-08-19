@@ -1,6 +1,4 @@
-import os
 import unittest
-import subprocess
 from noddy_lambda import lambda_handler
 
 
