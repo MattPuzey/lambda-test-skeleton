@@ -12,8 +12,8 @@ Emulambda provides profiling information (clock time and memory usage estimation
 ```
 git clone https://github.com/fugue/emulambda/
 pip3 install -e emulambda --user
-cd <path>/lambda-test-skeleton
-emulambda noddy_lambda.lambda_handler - -v < noddy_lambda/event.json
+cd <path>/lambda-test-skeleton/noddy_lambda
+emulambda noddy_lambda.lambda_handler - -v < event.json
 ```
 
 ## python-lambda-local
@@ -37,9 +37,8 @@ virtualenv -p /usr/local/bin/python3.6 my_project
 Run the lambda function:
 
 ```
-cd noddy_lambda
-python-lambda-local -f lambda_handler __init__.py event.json
-
+cd <path>/lambda-test-skeleton/noddy_lambda
+python-lambda-local -f lambda_handler noddy_lambda.py event.json
 ```
 
 An amazon engineer has written an [unofficial blog](https://medium.com/@bezdelev/how-to-test-a-python-aws-lambda-function-locally-with-pycharm-run-configurations-6de8efc4b206)
